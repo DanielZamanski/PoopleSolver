@@ -82,8 +82,8 @@ class Graph:
         index:int = 0
         
         while index < len(nodes_to_visit):
-            neighbour = nodes_to_visit[index][1]
-            parent = nodes_to_visit[index][0]
+            neighbour: Vertex = nodes_to_visit[index][1]
+            parent: str = nodes_to_visit[index][0]
             if neighbour.readable_name == POOP_WORD:
                 visited.add(POOP_WORD)
                 path[POOP_WORD] = parent
