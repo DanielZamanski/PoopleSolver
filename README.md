@@ -9,7 +9,8 @@ Clone the repo, cd to the cloned directory and run
 python -m poople_solver
 ```
 The interaction should look something like this:
-<img>![alt text](image.png)</img>
+<img width="320" height="69" alt="image" src="https://github.com/user-attachments/assets/3123031b-63ef-4aaf-9c7f-f16637862965" />
+
 
 ### Possible issues
 The valid 4-letter word list was compiled using the word-list repo: https://github.com/en-wl/wordlist
