@@ -81,29 +81,29 @@ class Graph:
         nodes_to_visit:list[tuple[str,Vertex]] = [(current_node.readable_name,neighbour) for neighbour in list(current_node.neighbours.values())]
         index:int = 0
         
-        while POOP_WORD not in visited:
-            while index < len(nodes_to_visit):
-                neighbour = nodes_to_visit[index][1]
-                parent = nodes_to_visit[index][0]
-                if neighbour.readable_name == POOP_WORD:
-                    visited.add(POOP_WORD)
-                    path[POOP_WORD] = parent
-                    k,v = POOP_WORD, parent
-                    complete_path:list[str] = []
-                    while v:
-                        complete_path.append(k)
-                        k,v = v,path[v]
-                    
-                    return complete_path[::-1]
+
+        while index < len(nodes_to_visit):
+            neighbour = nodes_to_visit[index][1]
+            parent = nodes_to_visit[index][0]
+            if neighbour.readable_name == POOP_WORD:
+                visited.add(POOP_WORD)
+                path[POOP_WORD] = parent
+                k,v = POOP_WORD, parent
+                complete_path:list[str] = []
+                while v:
+                    complete_path.append(k)
+                    k,v = v,path[v]
                 
-                index+=1
-                if neighbour.readable_name in visited:
-                    continue
-                
-                path[neighbour.readable_name] = parent
-                visited.add(neighbour.readable_name)
-                nodes_to_visit.extend([(neighbour.readable_name,next_neighbour) for next_neighbour in list(neighbour.neighbours.values())])
-                
+                return complete_path[::-1]
+            
+            index+=1
+            if neighbour.readable_name in visited:
+                continue
+            
+            path[neighbour.readable_name] = parent
+            visited.add(neighbour.readable_name)
+            nodes_to_visit.extend([(neighbour.readable_name,next_neighbour) for next_neighbour in list(neighbour.neighbours.values())])
+            
             
             
 
