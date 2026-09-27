@@ -109,4 +109,5 @@ class Graph:
 
 original_word:str = input("enter the word you wish to poople:\n")
 g = Graph.generate_from_original_word(original_word=original_word)
-print(g.BFS())
+result = [original_word]+g.BFS()
+print(" -> ".join(result))
