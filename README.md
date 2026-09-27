@@ -14,5 +14,6 @@ The interaction should look something like this:
 
 
 ### Possible issues
-The valid 4-letter word list was compiled using the word-list repo: https://github.com/en-wl/wordlist
+The valid 4-letter word list was compiled using the word-list repo: https://github.com/en-wl/wordlist 
+
 As such, some of the words might not be recognized by Poople. I've removed most of those but if you run into such a word, just remove the word from the `four_letter_english_words.txt` file locally and re-run (and if you're feeling extra charitable you can open a PR with the removal)
