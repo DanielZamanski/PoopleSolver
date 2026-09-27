@@ -1,5 +1,5 @@
 # PoopleSolver
-Basic script solver for the hit game "poople". This is a quick-and-dirty hacky solution I did for fun
+Basic script solver for the hit game "poople" (https://www.alldle.net/game/poople-unlimited). This is a quick-and-dirty hacky solution I did for fun
 but it seems to not only work but also to provide the optimal solution. Might come back to this and workshop it to atleast make it more palatable (I might even create an honest-to-god UI for this)
 
 ### How to run
