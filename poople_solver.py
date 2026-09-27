@@ -6,7 +6,6 @@ from copy import deepcopy
 ORDER_A: Final[int] = 97
 ORDER_Z: Final[int] = ORDER_A + 25
 ALL_LETTERS: Final[range] = range(ORDER_A, ORDER_Z + 1)
-POOP: Final[list[str]] = ["p", "o", "o", "p"]
 POOP_WORD:Final[str] = 'poop'
 
 
@@ -36,7 +35,7 @@ class Vertex:
     def generate_neighbours_rec(
         self, *, created: set[str], depth: int, max_depth: int = 100
     ):
-        if "".join(POOP) in created or depth >= max_depth:
+        if POOP_WORD in created or depth >= max_depth:
             return
 
         for i in range(len(self.id)):
