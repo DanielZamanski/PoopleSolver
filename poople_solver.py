@@ -81,7 +81,6 @@ class Graph:
         nodes_to_visit:list[tuple[str,Vertex]] = [(current_node.readable_name,neighbour) for neighbour in list(current_node.neighbours.values())]
         index:int = 0
         
-
         while index < len(nodes_to_visit):
             neighbour = nodes_to_visit[index][1]
             parent = nodes_to_visit[index][0]
