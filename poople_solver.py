@@ -107,6 +107,9 @@ class Graph:
 
 while True:
     original_word:str = input("enter the word you wish to poople:\n")
+    if original_word not in WORD_SET:
+        print(f'{original_word} is invalid, enter a valid 4 letter word')
+        continue
     g = Graph.generate_from_original_word(original_word=original_word)
     result = [original_word]+g.BFS()
     print(" -> ".join(result))
