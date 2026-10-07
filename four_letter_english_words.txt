@@ -916,7 +916,6 @@ fame
 fane
 fang
 fans
-fard
 fare
 farl
 farm
@@ -2317,7 +2316,6 @@ pone
 pong
 pons
 pony
-pood
 poof
 pooh
 pool
